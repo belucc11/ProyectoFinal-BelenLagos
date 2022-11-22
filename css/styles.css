@@ -1,0 +1,163 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estilos generales*/
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/*estilos del header*/
+
+header div{
+    text-align: end;
+}
+
+
+/*estilos del main*/
+
+.carrousel{
+    width: 100%;
+}
+
+main{
+    margin: 0.9rem;
+}
+
+#home-h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+main h1{
+    font-size: 30px;
+}
+main section{
+    display: none;
+}
+
+ /*estilos para desktop main*/
+
+@media screen and (min-width:1024px)
+{
+main section{
+    display: none;
+    display: grid;
+            grid-template-columns:auto ;
+            grid-template-rows:auto ;
+            grid-template-areas: 
+                    "img-uno img-dos"
+                    "h3-uno  h3-dos"
+                    "p-uno  p-dos"
+                    "img-tres img-cuatro"
+                    "h3-tres  h3-cuatro"
+                    "p-tres p-cuatro";
+    
+            justify-items: center;
+        }
+
+        .img-uno{
+            grid-area: img-uno;
+        }
+        .h3-uno{
+            grid-area: h3-uno;
+        }
+        .p-uno{
+            grid-area: p-uno ;
+        }
+        .img-dos{
+        grid-area: img-dos;
+        }
+        .h3-dos{
+        grid-area: h3-dos;
+        }
+        .p-dos{
+        grid-area: p-dos ;
+        }
+    
+        .img-tres{
+        grid-area: img-tres;
+        }
+        .h3-tres{
+        grid-area: h3-tres;
+        }
+        .p-tres{
+        grid-area: p-tres ;  
+        }
+        .img-cuatro{
+        grid-area: img-cuatro
+        }
+        .h3-cuatro{
+        grid-area: h3-cuatro
+        }
+        .p-dcuatro{
+        grid-area: p-cuatro;
+        }
+    
+main section div p{
+    width: 40rem;
+}
+}
+
+ /*pagina contacto*/
+
+.contacto{
+    display: grid;
+            grid-template-columns:auto ;
+            grid-template-rows:auto ;
+            grid-template-areas: 
+            "contenedor-mapa table";
+            justify-items: center;
+        }
+.contenedor-mapa{
+grid-area: contenedor-mapa;
+}
+
+.table{
+grid-area: table;
+}
+
+
+ /*pagina sobre nosotros*/
+main div p{
+    margin: 10px;
+  }
+
+.contenedor-nosotros{
+   text-align: center;
+}
+
+.nosotros{
+    width: 500px;
+}
+
+
+/* estilos de footer */
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer ul li img:hover{
+        transform: scale(80%);
+}
+
+footer h2{
+    text-align: center;
+    font-size: 13px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
