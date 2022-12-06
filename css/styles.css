@@ -45,8 +45,7 @@ main {
     flex-direction: row;
     gap: 2rem; }
   main .section-index {
-    display: none;
-    background-color: tomato; }
+    display: none; }
 
 /*estilos para desktop main*/
 @media screen and (min-width: 1024px) {
