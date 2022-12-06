@@ -1,0 +1,23 @@
+/* estilos de footer */
+
+footer{
+    background-color: $color-footer;
+    height: 200px;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        margin-top: 10rem;
+      li{
+        margin-top: 3rem;
+            img:hover{
+            transform: scale(80%);
+            }
+        }
+    }
+    H2{
+        text-align: center;
+        font-size: 13px;
+        margin-top: 2rem;
+    }
+}

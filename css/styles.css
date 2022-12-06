@@ -1,163 +1,106 @@
 /* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+main #home-h1, main .table, main .section-index {
+  margin-top: 3rem; }
 
-/*estilos generales*/
+/* estilos de header */
+nav div div ul li {
+  font-size: larger;
+  font-weight: bold; }
 
-body{
-    background-color: whitesmoke;
-    font-family: 'Roboto', sans-serif;
-}
+/* estilos de body */
+body {
+  background-color: #f1e8e8;
+  font-family: 'Roboto', sans-serif; }
 
-
-
-/*estilos del header*/
-
-header div{
-    text-align: end;
-}
-
-
-/*estilos del main*/
-
-.carrousel{
-    width: 100%;
-}
-
-main{
-    margin: 0.9rem;
-}
-
-#home-h1{
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
+/* estilos de main */
+main {
+  margin: 1rem; }
+  main h1 {
+    font-size: x-large;
+    margin-left: 1rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
-}
-
-main h1{
-    font-size: 30px;
-}
-main section{
+    color: brown;
+    font-weight: bold; }
+  main #home-h1 {
+    padding: 2rem;
+    background-color: brown;
+    text-align: center;
+    font-weight: bolder;
+    color: #f1e8e8; }
+  main .section-nosotros {
+    display: flex;
+    flex-direction: column; }
+  main .p-nosotros p {
+    padding: 1rem;
+    justify-content: center;
+    font-size: 1.2rem; }
+  main .contenedor-mapa {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem; }
+  main .section-index {
     display: none;
-}
+    background-color: tomato; }
 
- /*estilos para desktop main*/
-
-@media screen and (min-width:1024px)
-{
-main section{
-    display: none;
+/*estilos para desktop main*/
+@media screen and (min-width: 1024px) {
+  main .section-index {
+    display: block;
     display: grid;
-            grid-template-columns:auto ;
-            grid-template-rows:auto ;
-            grid-template-areas: 
-                    "img-uno img-dos"
-                    "h3-uno  h3-dos"
-                    "p-uno  p-dos"
-                    "img-tres img-cuatro"
-                    "h3-tres  h3-cuatro"
-                    "p-tres p-cuatro";
-    
-            justify-items: center;
-        }
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "img-uno img-dos" "h2-uno  h2-dos" "p-uno  p-dos" "img-tres img-cuatro" "h2tres  h2-cuatro" "p-tres p-cuatro";
+    justify-items: center; }
+    main .section-index .img-uno {
+      grid-area: img-uno; }
+    main .section-index .h2-uno {
+      grid-area: h3-uno; }
+    main .section-index .p-uno {
+      grid-area: p-uno; }
+    main .section-index .img-dos {
+      grid-area: img-dos; }
+    main .section-index .h2-dos {
+      grid-area: h3-dos; }
+    main .section-index .p-dos {
+      grid-area: p-dos; }
+    main .section-index .img-tres {
+      grid-area: img-tres; }
+    main .section-index .h2-tres {
+      grid-area: h3-tres; }
+    main .section-index .p-tres {
+      grid-area: p-tres; }
+    main .section-index .img-cuatro {
+      grid-area: img-cuatro; }
+    main .section-index .h2-cuatro {
+      grid-area: h3-cuatro; }
+    main .section-index .p-dcuatro {
+      grid-area: p-cuatro; }
+    main .section-index div p {
+      width: 18rem; } }
 
-        .img-uno{
-            grid-area: img-uno;
-        }
-        .h3-uno{
-            grid-area: h3-uno;
-        }
-        .p-uno{
-            grid-area: p-uno ;
-        }
-        .img-dos{
-        grid-area: img-dos;
-        }
-        .h3-dos{
-        grid-area: h3-dos;
-        }
-        .p-dos{
-        grid-area: p-dos ;
-        }
-    
-        .img-tres{
-        grid-area: img-tres;
-        }
-        .h3-tres{
-        grid-area: h3-tres;
-        }
-        .p-tres{
-        grid-area: p-tres ;  
-        }
-        .img-cuatro{
-        grid-area: img-cuatro
-        }
-        .h3-cuatro{
-        grid-area: h3-cuatro
-        }
-        .p-dcuatro{
-        grid-area: p-cuatro;
-        }
-    
-main section div p{
-    width: 40rem;
-}
-}
-
- /*pagina contacto*/
-
-.contacto{
-    display: grid;
-            grid-template-columns:auto ;
-            grid-template-rows:auto ;
-            grid-template-areas: 
-            "contenedor-mapa table";
-            justify-items: center;
-        }
-.contenedor-mapa{
-grid-area: contenedor-mapa;
-}
-
-.table{
-grid-area: table;
-}
-
-
- /*pagina sobre nosotros*/
-main div p{
-    margin: 10px;
-  }
-
-.contenedor-nosotros{
-   text-align: center;
-}
-
-.nosotros{
-    width: 500px;
-}
-
+.carrousel {
+  width: 100%; }
 
 /* estilos de footer */
-
-footer ul{
-    list-style: none;
+footer {
+  background-color: #8c878192;
+  height: 200px; }
+  footer ul {
     display: flex;
     justify-content: space-around;
-    
-}
-
-footer ul li img:hover{
-        transform: scale(80%);
-}
-
-footer h2{
+    list-style: none;
+    margin-top: 10rem; }
+    footer ul li {
+      margin-top: 3rem; }
+      footer ul li img:hover {
+        transform: scale(80%); }
+  footer H2 {
     text-align: center;
     font-size: 13px;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
-}
+    margin-top: 2rem; }

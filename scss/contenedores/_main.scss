@@ -1,0 +1,114 @@
+/* estilos de main */
+main{
+    margin: 1rem;
+    h1{
+        @include estilosTitulos;
+    }
+    
+    #home-h1{
+        @extend %estilosMargin;
+        padding: 2rem;
+        background-color: brown;
+        text-align:center;
+        font-weight:bolder;
+        color: $color-fondo;
+    }
+    
+    .section-nosotros{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .p-nosotros{
+        p{
+        @include estilosTexto;
+        }
+    }
+
+   .contenedor-mapa{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+   }
+
+   .table{
+    @extend %estilosMargin;
+   }
+
+    .section-index{
+        @extend %estilosMargin;
+        display: none;
+        background-color: tomato;
+    }
+
+    
+}
+
+/*estilos para desktop main*/
+@media screen and (min-width:1024px)
+{
+main{
+    .section-index{
+        display: block;
+        display: grid;
+            grid-template-columns:auto ;
+            grid-template-rows:auto ;
+            grid-template-areas: 
+                    "img-uno img-dos"
+                    "h2-uno  h2-dos"
+                    "p-uno  p-dos"
+                    "img-tres img-cuatro"
+                    "h2tres  h2-cuatro"
+                    "p-tres p-cuatro";
+    
+            justify-items: center;
+        .img-uno{
+            grid-area: img-uno;
+        }
+        .h2-uno{
+            grid-area: h3-uno;
+        }
+        .p-uno{
+            grid-area: p-uno ;
+        }
+        .img-dos{
+        grid-area: img-dos;
+        }
+        .h2-dos{
+        grid-area: h3-dos;
+        }
+        .p-dos{
+        grid-area: p-dos ;
+        }
+    
+        .img-tres{
+        grid-area: img-tres;
+        }
+        .h2-tres{
+        grid-area: h3-tres;
+        }
+        .p-tres{
+        grid-area: p-tres ;  
+        }
+        .img-cuatro{
+        grid-area: img-cuatro
+        }
+        .h2-cuatro{
+        grid-area: h3-cuatro
+        }
+        .p-dcuatro{
+        grid-area: p-cuatro;
+        }
+    
+        div p{
+        width: 18rem;
+        }   
+    }
+}
+}
+
+
+
+.carrousel{
+    width: 100%;
+}
