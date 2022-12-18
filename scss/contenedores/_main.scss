@@ -27,20 +27,20 @@ main{
 
    .contenedor-mapa{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align:center;
     gap: 2rem;
    }
 
    .table{
+    width: fit-content;
     @extend %estilosMargin;
    }
 
     .section-index{
         @extend %estilosMargin;
         display: none;
-    }
-
-    
+    } 
 }
 
 /*estilos para desktop main*/

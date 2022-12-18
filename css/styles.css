@@ -22,7 +22,6 @@ main {
   margin: 1rem; }
   main h1 {
     font-size: x-large;
-    margin-left: 1rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: brown;
@@ -42,8 +41,11 @@ main {
     font-size: 1.2rem; }
   main .contenedor-mapa {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
     gap: 2rem; }
+  main .table {
+    width: fit-content; }
   main .section-index {
     display: none; }
 
@@ -88,18 +90,18 @@ main {
 
 /* estilos de footer */
 footer {
-  background-color: #8c878192;
-  height: 200px; }
+  background-color: #8c878192; }
   footer ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    margin-top: 10rem; }
+    margin-top: 5rem; }
     footer ul li {
-      margin-top: 3rem; }
+      margin-top: 3rem;
+      font-size: 1.5vmax; }
       footer ul li img:hover {
         transform: scale(80%); }
   footer H2 {
     text-align: center;
     font-size: 13px;
-    margin-top: 2rem; }
+    margin-top: 3rem; }
